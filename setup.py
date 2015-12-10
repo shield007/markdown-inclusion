@@ -9,7 +9,7 @@ EXCLUDE_FROM_PACKAGES = []
 
 setup(
     name='markdown-inclusion',
-    description='This is plugin to extend python markdown and allow it include other markdown files.'
+    description='This is plugin to extend python markdown and allow it include other markdown files.',
     author='John-Paul Stanford',
     author_email='John-Paul.Stanford@arm.com',
     url='https://github.com/shield007/markdown-inclusion',
