@@ -3,8 +3,6 @@ import os
 import sys
 from setuptools import find_packages, setup
 
-os.chdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'src'))
-
 EXCLUDE_FROM_PACKAGES = []
 
 setup(
