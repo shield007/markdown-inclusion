@@ -14,6 +14,6 @@ setup(
     packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
     include_package_data=True,
     version='1.0',
-    py_modules=['myextension'],
+    py_modules=['markdown_inclusion'],
     install_requires = ['markdown>=2.5'],
 )
