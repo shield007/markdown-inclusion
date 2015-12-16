@@ -26,3 +26,6 @@ class InclusionPreprocessor(Preprocessor):
 class Inclusion(Extension):
    def extendMarkdown(self, md, md_globals):
        md.preprocessors.add("inclusion",InclusionPreprocessor(md),">normalize_whitespace")
+
+def makeExtension(*args, **kwargs):
+    return Inclusion(*args, **kwargs)
