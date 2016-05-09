@@ -15,9 +15,8 @@ class InclusionPreprocessor(Preprocessor):
             if m:
                 url=m.group(1)
                 response = requests.get(url)
-                #if response.status_code 
-                for line in response.text.splitlines(True):
-                    new_lines.append(line)
+                if response.status_code == requests.codes.ok:
+                    new_lines.append(response.text)
             else:
                 new_lines.append(line)
        
